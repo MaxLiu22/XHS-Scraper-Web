@@ -2,14 +2,11 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <div class="logo">
-          <img :src="logoUrl" alt="Logo" class="logo-img" />
-        </div>
         <h1 class="hero-title">{{ t('hero.title') }}</h1>
         <p class="hero-tagline">{{ t('hero.tagline') }}</p>
         <div class="hero-buttons">
           <button class="btn btn-primary" @click="downloadZip">{{ t('hero.downloadBtn') }}</button>
-          <button class="btn btn-secondary">{{ t('hero.viewDemoBtn') }}</button>
+          <button class="btn btn-secondary" @click="scrollToDemo">{{ t('hero.viewDemoBtn') }}</button>
         </div>
         <p class="language-notice">{{ t('hero.languageNotice') }}</p>
       </div>
@@ -44,6 +41,13 @@ function downloadZip() {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+}
+
+function scrollToDemo() {
+  const demoSection = document.getElementById('demo');
+  if (demoSection) {
+    demoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 </script>
 
