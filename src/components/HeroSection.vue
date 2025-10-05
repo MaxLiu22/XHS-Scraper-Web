@@ -11,16 +11,8 @@
         <p class="language-notice">{{ t('hero.languageNotice') }}</p>
       </div>
       <div class="hero-image">
-        <div class="screenshot-placeholder">
-          <svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="300" rx="8" fill="#F3F4F6"/>
-            <rect x="20" y="20" width="360" height="40" rx="4" fill="#E5E7EB"/>
-            <rect x="20" y="70" width="170" height="100" rx="4" fill="#D1D5DB"/>
-            <rect x="210" y="70" width="170" height="100" rx="4" fill="#D1D5DB"/>
-            <rect x="20" y="180" width="360" height="20" rx="4" fill="#E5E7EB"/>
-            <rect x="20" y="210" width="280" height="20" rx="4" fill="#E5E7EB"/>
-            <rect x="20" y="240" width="200" height="20" rx="4" fill="#E5E7EB"/>
-          </svg>
+        <div class="poster-container">
+          <img :src="currentPoster" :alt="t('hero.title')" class="poster-image" />
         </div>
       </div>
     </div>
@@ -29,10 +21,27 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 import logoUrl from '@assets/logo.svg';
 import zipUrl from '../assets/ext-pkg/xhs-all-in-one.zip';
+import posterCN from '../assets/poster/CN.png';
+import posterEN from '../assets/poster/EN.png';
+import posterKR from '../assets/poster/KR.png';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
+
+// Get the appropriate poster image based on current locale
+const currentPoster = computed(() => {
+  switch (locale.value) {
+    case 'zh-CN':
+      return posterCN;
+    case 'ko':
+      return posterKR;
+    case 'en':
+    default:
+      return posterEN;
+  }
+});
 
 function downloadZip() {
   const link = document.createElement('a');
@@ -149,15 +158,28 @@ function scrollToDemo() {
   align-items: center;
 }
 
-.screenshot-placeholder {
+.poster-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
-.screenshot-placeholder:hover {
+.poster-container:hover {
+  transform: scale(1.02);
+}
+
+.poster-container:hover .poster-image {
   transform: scale(1.02);
 }
 
