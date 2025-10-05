@@ -118,7 +118,7 @@ const { t } = useI18n();
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   position: relative;
   transition: transform 0.3s ease;
-  aspect-ratio: 9/16;
+  aspect-ratio: 3/4;
   display: flex;
   flex-direction: column;
 }
