@@ -13,7 +13,7 @@
         <h1 class="hero-title">{{ t('hero.title') }}</h1>
         <p class="hero-tagline">{{ t('hero.tagline') }}</p>
         <div class="hero-buttons">
-          <button class="btn btn-primary">{{ t('hero.downloadBtn') }}</button>
+          <button class="btn btn-primary" @click="downloadZip">{{ t('hero.downloadBtn') }}</button>
           <button class="btn btn-secondary">{{ t('hero.viewDemoBtn') }}</button>
         </div>
         <p class="language-notice">{{ t('hero.languageNotice') }}</p>
@@ -37,8 +37,18 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
+import zipUrl from '../assets/ext-pkg/xhs-all-in-one.zip';
 
 const { t } = useI18n();
+
+function downloadZip() {
+  const link = document.createElement('a');
+  link.href = zipUrl;
+  link.download = 'xhs-all-in-one.zip';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 </script>
 
 <style scoped>
