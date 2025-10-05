@@ -3,12 +3,7 @@
     <div class="hero-content">
       <div class="hero-text">
         <div class="logo">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="48" height="48" rx="8" fill="#DC2626"/>
-            <path d="M16 14H32V18H16V14Z" fill="white"/>
-            <path d="M16 22H28V26H16V22Z" fill="white"/>
-            <path d="M16 30H24V34H16V30Z" fill="white"/>
-          </svg>
+          <img :src="logoUrl" alt="Logo" class="logo-img" />
         </div>
         <h1 class="hero-title">{{ t('hero.title') }}</h1>
         <p class="hero-tagline">{{ t('hero.tagline') }}</p>
@@ -37,6 +32,7 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
+import logoUrl from '@assets/logo.svg';
 import zipUrl from '../assets/ext-pkg/xhs-all-in-one.zip';
 
 const { t } = useI18n();
@@ -75,6 +71,12 @@ function downloadZip() {
 .logo {
   width: 48px;
   height: 48px;
+}
+
+.logo-img {
+  width: 48px;
+  height: 48px;
+  display: block;
 }
 
 .hero-title {

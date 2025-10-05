@@ -24,14 +24,7 @@
           <p class="step-description">{{ t('download.step3.description') }}</p>
         </div>
       </div>
-      <div class="download-note">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="10" cy="10" r="9" stroke="#DC2626" stroke-width="2"/>
-          <path d="M10 6V11" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="10" cy="14" r="1" fill="#DC2626"/>
-        </svg>
-        <p>{{ t('download.note') }}</p>
-      </div>
+      
     </div>
   </section>
 </template>

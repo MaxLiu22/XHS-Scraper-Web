@@ -32,7 +32,7 @@
     "subtitle": "几分钟即可开始使用",
     "step1": {
       "title": "下载扩展",
-      "description": "从 Chrome 网上应用店或 Firefox 附加组件安装浏览器扩展"
+      "description": "从我们的官方网站下载浏览器扩展"
     },
     "step2": {
       "title": "访问小红书",
@@ -40,7 +40,7 @@
     },
     "step3": {
       "title": "开始采集",
-      "description": "点击扩展图标并配置您的采集设置"
+      "description": "打开扩展并选择您想要提取数据的帖子"
     },
     "note": "注意：本工具仅采集公开可见的数据，无需登录。"
   },

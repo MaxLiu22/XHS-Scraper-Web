@@ -32,7 +32,7 @@
     "subtitle": "Get started in minutes",
     "step1": {
       "title": "Download Extension",
-      "description": "Install the browser extension from Chrome Web Store or Firefox Add-ons"
+      "description": "Download the browser extension from our official website"
     },
     "step2": {
       "title": "Navigate to Xiaohongshu",
@@ -40,7 +40,7 @@
     },
     "step3": {
       "title": "Start Extraction",
-      "description": "Click the extension icon and configure your extraction settings"
+      "description": "Open the extension and select the posts you want to extract data from"
     },
     "note": "Note: This tool only captures publicly visible data. No login required."
   },
