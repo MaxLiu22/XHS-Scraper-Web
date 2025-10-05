@@ -7,17 +7,45 @@
       </div>
       <div class="demo-content">
         <div class="demo-preview">
-          <div class="preview-window">
-            <div class="window-header">
-              <div class="window-dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-              <div class="window-title">extracted_data.json</div>
+          <div class="videos-grid">
+            <div class="video-container">
+              <video 
+                :src="demoVideoCN" 
+                controls 
+                muted 
+                loop 
+                class="demo-video"
+                :poster="demoVideoCN"
+              >
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-label">中文演示</div>
             </div>
-            <div class="window-content">
-              <pre class="code-preview">{{ sampleData }}</pre>
+            <div class="video-container">
+              <video 
+                :src="demoVideoEN" 
+                controls 
+                muted 
+                loop 
+                class="demo-video"
+                :poster="demoVideoEN"
+              >
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-label">English Demo</div>
+            </div>
+            <div class="video-container">
+              <video 
+                :src="demoVideoKR" 
+                controls 
+                muted 
+                loop 
+                class="demo-video"
+                :poster="demoVideoKR"
+              >
+                Your browser does not support the video tag.
+              </video>
+              <div class="video-label">한국어 데모</div>
             </div>
           </div>
         </div>
@@ -30,32 +58,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
+import demoVideoCN from '../assets/demo_video/cn.mp4';
+import demoVideoEN from '../assets/demo_video/en.mp4';
+import demoVideoKR from '../assets/demo_video/kr.mp4';
 
 const { t } = useI18n();
-
-const sampleData = computed(() => {
-  return `{
-  "posts": [
-    {
-      "id": "post_12345",
-      "title": "Beautiful Summer Outfit Ideas",
-      "content": "Check out these amazing...",
-      "author": {
-        "name": "FashionLover",
-        "followers": 15200
-      },
-      "engagement": {
-        "likes": 1520,
-        "comments": 89,
-        "shares": 45
-      },
-      "tags": ["fashion", "summer", "style"],
-      "images": 4,
-      "publishedAt": "2025-10-01T10:30:00Z"
-    }
-  ]
-}`;
-});
 </script>
 
 <style scoped>
@@ -96,63 +103,48 @@ const sampleData = computed(() => {
   margin-bottom: 2rem;
 }
 
-.preview-window {
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.video-container {
   background-color: #1f2937;
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  position: relative;
+  transition: transform 0.3s ease;
+  aspect-ratio: 9/16;
+  display: flex;
+  flex-direction: column;
 }
 
-.window-header {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
+.video-container:hover {
+  transform: translateY(-4px);
+}
+
+.demo-video {
+  width: 100%;
+  flex: 1;
+  display: block;
+  border-radius: 0.75rem 0.75rem 0 0;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.video-label {
+  padding: 0.75rem;
   background-color: #111827;
-  border-bottom: 1px solid #374151;
-}
-
-.window-dots {
-  display: flex;
-  gap: 0.5rem;
-  margin-right: 1rem;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.dot.red {
-  background-color: #ef4444;
-}
-
-.dot.yellow {
-  background-color: #f59e0b;
-}
-
-.dot.green {
-  background-color: #10b981;
-}
-
-.window-title {
-  color: #9ca3af;
-  font-size: 0.875rem;
-  font-family: 'Courier New', monospace;
-}
-
-.window-content {
-  padding: 1.5rem;
-  overflow-x: auto;
-}
-
-.code-preview {
   color: #e5e7eb;
-  font-family: 'Courier New', monospace;
+  text-align: center;
   font-size: 0.875rem;
-  line-height: 1.6;
-  margin: 0;
-  white-space: pre;
+  font-weight: 600;
+  border-radius: 0 0 0.75rem 0.75rem;
+  flex-shrink: 0;
 }
 
 .demo-caption {
@@ -168,12 +160,25 @@ const sampleData = computed(() => {
     font-size: 2rem;
   }
 
-  .window-content {
-    padding: 1rem;
+  .videos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .code-preview {
-    font-size: 0.75rem;
+  .video-container {
+    aspect-ratio: 9/16;
+  }
+
+  .video-label {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 </style>
