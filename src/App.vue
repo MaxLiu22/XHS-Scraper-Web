@@ -8,6 +8,7 @@ import FeaturesSection from './components/FeaturesSection.vue';
 import DownloadSection from './components/DownloadSection.vue';
 import DemoSection from './components/DemoSection.vue';
 import ContactSection from './components/ContactSection.vue';
+import logoUrl from './assets/logo.svg';
 
 const { t, locale } = useI18n();
 
@@ -55,7 +56,10 @@ watch(locale, () => {
   <div class="app">
     <header class="header">
       <div class="header-container">
-        <div class="header-brand">Xiaohongshu Post Scraper</div>
+        <div class="header-brand-section">
+          <img :src="logoUrl" alt="Logo" class="logo-img" />
+          <div class="header-brand">Xiaohongshu Post Scraper</div>
+        </div>
         <nav class="header-nav">
           <a href="#features">{{ t('footer.navigation.features') }}</a>
           <a href="#download">{{ t('footer.navigation.download') }}</a>
@@ -102,10 +106,23 @@ watch(locale, () => {
   gap: 2rem;
 }
 
+.header-brand-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
 .header-brand {
   font-size: 1.125rem;
   font-weight: 700;
   color: #111827;
+  white-space: nowrap;
 }
 
 .header-nav {
