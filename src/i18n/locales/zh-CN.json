@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "小红书帖子采集器 - 轻松提取公开数据",
+    "description": "快速高效的小红书公开帖子数据提取工具。多维度数据采集，智能筛选，快速导出。",
+    "keywords": "小红书采集器, 数据提取, 小红书工具, 帖子分析, 数据导出"
+  },
+  "hero": {
+    "title": "小红书帖子采集器",
+    "tagline": "轻松提取公开帖子数据",
+    "downloadBtn": "立即下载",
+    "viewDemoBtn": "查看演示",
+    "languageNotice": "🌏 中文和韩文版本即将推出！"
+  },
+  "features": {
+    "title": "核心功能",
+    "subtitle": "强大的数据提取工具",
+    "extraction": {
+      "title": "多维度数据提取",
+      "description": "采集帖子标题、内容、图片、标签、互动数据和作者信息"
+    },
+    "export": {
+      "title": "快速导出",
+      "description": "一键导出为 CSV、JSON 或 Excel 格式，便于分析"
+    },
+    "filtering": {
+      "title": "智能筛选",
+      "description": "按日期范围、互动水平或关键词筛选帖子，精准获取所需数据"
+    }
+  },
+  "download": {
+    "title": "安装与使用",
+    "subtitle": "几分钟即可开始使用",
+    "step1": {
+      "title": "下载扩展",
+      "description": "从 Chrome 网上应用店或 Firefox 附加组件安装浏览器扩展"
+    },
+    "step2": {
+      "title": "访问小红书",
+      "description": "打开小红书的任意用户主页或搜索结果页面"
+    },
+    "step3": {
+      "title": "开始采集",
+      "description": "点击扩展图标并配置您的采集设置"
+    },
+    "note": "注意：本工具仅采集公开可见的数据，无需登录。"
+  },
+  "demo": {
+    "title": "实际演示",
+    "subtitle": "数据提取示例预览",
+    "sampleCaption": "示例提取数据，展示帖子指标、互动数据和元数据"
+  },
+  "contact": {
+    "title": "支持与联系",
+    "email": "电子邮件",
+    "github": "GitHub 仓库",
+    "faq": "常见问题"
+  },
+  "footer": {
+    "disclaimer": "本工具仅供教育和研究用途。请始终遵守平台服务条款和数据隐私法规。",
+    "navigation": {
+      "features": "功能",
+      "download": "下载",
+      "demo": "演示",
+      "contact": "联系"
+    },
+    "languageNotice": "提供英文版本，中文和韩文版本即将推出",
+    "copyright": "© 2025 小红书帖子采集器。保留所有权利。"
+  }
+}

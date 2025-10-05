@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "샤오홍슈 게시물 스크래퍼 - 공개 데이터 쉽게 추출",
+    "description": "샤오홍슈의 공개 게시물 데이터를 빠르고 효율적으로 추출하는 도구. 다차원 데이터 추출과 스마트 필터링, 빠른 내보내기.",
+    "keywords": "샤오홍슈 스크래퍼, 데이터 추출, 레드북 도구, 게시물 분석, 데이터 내보내기"
+  },
+  "hero": {
+    "title": "샤오홍슈 게시물 스크래퍼",
+    "tagline": "공개 게시물 데이터를 쉽게 추출",
+    "downloadBtn": "지금 다운로드",
+    "viewDemoBtn": "데모 보기",
+    "languageNotice": "🌏 중국어 및 한국어 버전 곧 출시!"
+  },
+  "features": {
+    "title": "주요 기능",
+    "subtitle": "효율적인 데이터 추출을 위한 강력한 도구",
+    "extraction": {
+      "title": "다차원 데이터 추출",
+      "description": "게시물 제목, 콘텐츠, 이미지, 태그, 참여 지표 및 작성자 정보 캡처"
+    },
+    "export": {
+      "title": "빠른 내보내기",
+      "description": "CSV, JSON 또는 Excel 형식으로 원클릭 내보내기하여 쉽게 분석"
+    },
+    "filtering": {
+      "title": "스마트 필터링",
+      "description": "날짜 범위, 참여 수준 또는 키워드로 게시물을 필터링하여 필요한 것만 정확히 얻기"
+    }
+  },
+  "download": {
+    "title": "설치 및 사용",
+    "subtitle": "몇 분 안에 시작하세요",
+    "step1": {
+      "title": "확장 프로그램 다운로드",
+      "description": "Chrome 웹 스토어 또는 Firefox 부가 기능에서 브라우저 확장 프로그램 설치"
+    },
+    "step2": {
+      "title": "샤오홍슈로 이동",
+      "description": "샤오홍슈의 프로필 또는 검색 결과 페이지 열기"
+    },
+    "step3": {
+      "title": "추출 시작",
+      "description": "확장 프로그램 아이콘을 클릭하고 추출 설정 구성"
+    },
+    "note": "참고: 이 도구는 공개적으로 표시되는 데이터만 캡처합니다. 로그인이 필요하지 않습니다."
+  },
+  "demo": {
+    "title": "실제 동작 보기",
+    "subtitle": "데이터 추출 예시 미리보기",
+    "sampleCaption": "게시물 지표, 참여도 및 메타데이터를 보여주는 샘플 추출 데이터"
+  },
+  "contact": {
+    "title": "지원 및 연락처",
+    "email": "이메일",
+    "github": "GitHub 저장소",
+    "faq": "자주 묻는 질문"
+  },
+  "footer": {
+    "disclaimer": "이 도구는 교육 및 연구 목적으로만 사용됩니다. 항상 플랫폼 서비스 약관 및 데이터 개인정보 보호 규정을 준수하세요.",
+    "navigation": {
+      "features": "기능",
+      "download": "다운로드",
+      "demo": "데모",
+      "contact": "연락처"
+    },
+    "languageNotice": "영어로 제공되며, 중국어 및 한국어 버전이 곧 출시됩니다",
+    "copyright": "© 2025 샤오홍슈 게시물 스크래퍼. 모든 권리 보유."
+  }
+}

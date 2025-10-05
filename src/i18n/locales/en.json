@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Xiaohongshu Post Scraper - Extract Public Data Easily",
+    "description": "Fast and efficient tool to extract public post data from Xiaohongshu. Multi-dimensional data extraction with smart filtering and quick export.",
+    "keywords": "Xiaohongshu scraper, data extraction, RedBook tool, post analyzer, export data"
+  },
+  "hero": {
+    "title": "Xiaohongshu Post Scraper",
+    "tagline": "Extract Public Post Data with Ease",
+    "downloadBtn": "Download Now",
+    "viewDemoBtn": "View Demo",
+    "languageNotice": "🌏 Chinese and Korean versions coming soon!"
+  },
+  "features": {
+    "title": "Key Features",
+    "subtitle": "Powerful tools for efficient data extraction",
+    "extraction": {
+      "title": "Multi-dimensional Data Extraction",
+      "description": "Capture post titles, content, images, tags, engagement metrics, and author information"
+    },
+    "export": {
+      "title": "Fast Export",
+      "description": "Export to CSV, JSON, or Excel format with one click for easy analysis"
+    },
+    "filtering": {
+      "title": "Smart Filtering",
+      "description": "Filter posts by date range, engagement level, or keywords to get exactly what you need"
+    }
+  },
+  "download": {
+    "title": "Installation & Usage",
+    "subtitle": "Get started in minutes",
+    "step1": {
+      "title": "Download Extension",
+      "description": "Install the browser extension from Chrome Web Store or Firefox Add-ons"
+    },
+    "step2": {
+      "title": "Navigate to Xiaohongshu",
+      "description": "Open any profile or search results page on Xiaohongshu"
+    },
+    "step3": {
+      "title": "Start Extraction",
+      "description": "Click the extension icon and configure your extraction settings"
+    },
+    "note": "Note: This tool only captures publicly visible data. No login required."
+  },
+  "demo": {
+    "title": "See It In Action",
+    "subtitle": "Example data extraction preview",
+    "sampleCaption": "Sample extracted data showing post metrics, engagement, and metadata"
+  },
+  "contact": {
+    "title": "Support & Contact",
+    "email": "Email",
+    "github": "GitHub Repository",
+    "faq": "Frequently Asked Questions"
+  },
+  "footer": {
+    "disclaimer": "This tool is for educational and research purposes only. Always respect platform terms of service and data privacy regulations.",
+    "navigation": {
+      "features": "Features",
+      "download": "Download",
+      "demo": "Demo",
+      "contact": "Contact"
+    },
+    "languageNotice": "Available in English, with Chinese and Korean versions coming soon",
+    "copyright": "© 2025 Xiaohongshu Post Scraper. All rights reserved."
+  }
+}
