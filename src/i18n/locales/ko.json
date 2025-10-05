@@ -20,11 +20,11 @@
     },
     "export": {
       "title": "빠른 내보내기",
-      "description": "CSV, JSON 또는 Excel 형식으로 원클릭 내보내기하여 쉽게 분석"
+      "description": "현재는 Excel(.xlsx) 형식으로만 원클릭 내보내기 지원"
     },
     "filtering": {
-      "title": "스마트 필터링",
-      "description": "날짜 범위, 참여 수준 또는 키워드로 게시물을 필터링하여 필요한 것만 정확히 얻기"
+      "title": "완전 무료 사용",
+      "description": "구독 없이 핵심 기능을 모두 무료로 이용"
     }
   },
   "download": {

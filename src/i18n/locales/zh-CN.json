@@ -20,11 +20,11 @@
     },
     "export": {
       "title": "快速导出",
-      "description": "一键导出为 CSV、JSON 或 Excel 格式，便于分析"
+      "description": "目前仅支持一键导出为 Excel（.xlsx）格式"
     },
     "filtering": {
-      "title": "智能筛选",
-      "description": "按日期范围、互动水平或关键词筛选帖子，精准获取所需数据"
+      "title": "完全免费使用",
+      "description": "无需订阅，核心功能全部免费"
     }
   },
   "download": {

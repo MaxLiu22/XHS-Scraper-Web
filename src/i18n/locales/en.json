@@ -20,11 +20,11 @@
     },
     "export": {
       "title": "Fast Export",
-      "description": "Export to CSV, JSON, or Excel format with one click for easy analysis"
+      "description": "Export to Excel (.xlsx) with one click for easy analysis"
     },
     "filtering": {
-      "title": "Smart Filtering",
-      "description": "Filter posts by date range, engagement level, or keywords to get exactly what you need"
+      "title": "Completely Free to Use",
+      "description": "No subscriptions. Use all core features at no cost"
     }
   },
   "download": {
