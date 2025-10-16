@@ -24,7 +24,7 @@
     },
     "filtering": {
       "title": "完全免费",
-      "description": "支持导出账号帖子，最多 30 个"
+      "description": "支持导出单个账号的所有帖子，最多 30 个"
     }
   },
   "futureFeatures": {
@@ -47,7 +47,7 @@
     },
     "automatedMonitoring": {
       "title": "自动定时采集与预警通知",
-      "description": "不错过任何竞对动作或趋势风向。定期自动采集目标账号或关键词，新爆款内容发布时即时推送提醒。让工具成为你的 7×24 小时情报平台。"
+      "description": "不错过任何竞对动作或趋势风向。定期自动采集目标账号或关键词，新爆款内容发布时即时推送提醒。"
     },
     "multiPlatformExport": {
       "title": "多平台导出集成",
