@@ -31,6 +31,8 @@
     "badge": "未来功能",
     "title": "未来规划：内置智能分析",
     "subtitle": "从数据提取升级到战略洞察，为专业用户打造的智能功能正在路上",
+    "requestFeatureBtn": "没有你想要的功能？直接邮件告诉我！",
+    "emailCopiedMsg": "邮箱号已复制！",
     "aiInsights": {
       "title": "即时关键词云图与趋势分析",
       "description": "采集的瞬间即可可视化热门标签、话题趋势和关键词频率——无需导出，立即洞察。AI 驱动的可视化分析让机会一目了然。"
@@ -46,6 +48,10 @@
     "automatedMonitoring": {
       "title": "自动定时采集与预警通知",
       "description": "不错过任何竞对动作或趋势风向。定期自动采集目标账号或关键词，新爆款内容发布时即时推送提醒。让工具成为你的 7×24 小时情报平台。"
+    },
+    "multiPlatformExport": {
+      "title": "多平台导出集成",
+      "description": "一键同步数据到 Google Sheets、Notion、飞书等主流协作平台。告别手动复制粘贴，让数据直达你的工作流，团队协作更高效。"
     }
   },
   "download": {

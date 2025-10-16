@@ -56,15 +56,58 @@
           <h3 class="future-feature-title">{{ t('futureFeatures.automatedMonitoring.title') }}</h3>
           <p class="future-feature-description">{{ t('futureFeatures.automatedMonitoring.description') }}</p>
         </div>
+
+        <!-- Feature 5: Multi-Platform Export -->
+        <div class="future-feature-card">
+          <div class="future-feature-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="10" height="10" rx="1.5" stroke="#DC2626" stroke-width="2"/>
+              <rect x="18" y="8" width="10" height="10" rx="1.5" stroke="#DC2626" stroke-width="2"/>
+              <rect x="11" y="20" width="10" height="10" rx="1.5" stroke="#DC2626" stroke-width="2"/>
+              <circle cx="16" cy="4" r="2" fill="#DC2626"/>
+              <path d="M16 4V8M16 8L9 11M16 8L23 11M16 18L16 20" stroke="#DC2626" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="future-feature-title">{{ t('futureFeatures.multiPlatformExport.title') }}</h3>
+          <p class="future-feature-description">{{ t('futureFeatures.multiPlatformExport.description') }}</p>
+        </div>
+      </div>
+      
+      <div class="request-feature-section">
+        <transition name="fade">
+          <p v-if="emailCopied" class="email-copied-message">{{ t('futureFeatures.emailCopiedMsg') }}</p>
+        </transition>
+        <button @click="copyEmail" class="request-feature-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          {{ t('futureFeatures.requestFeatureBtn') }}
+        </button>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
+
+const email = 'maxliu2025dev@gmail.com';
+const emailCopied = ref(false);
+
+const copyEmail = async () => {
+  try {
+    await navigator.clipboard.writeText(email);
+    emailCopied.value = true;
+    setTimeout(() => {
+      emailCopied.value = false;
+    }, 3000);
+  } catch (err) {
+    console.error('Failed to copy email:', err);
+  }
+};
 </script>
 
 <style scoped>
@@ -88,7 +131,7 @@ const { t } = useI18n();
 }
 
 .future-features-container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -135,12 +178,12 @@ const { t } = useI18n();
 
 .future-features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
 }
 
 .future-feature-card {
-  padding: 2rem;
+  padding: 1.75rem;
   background: white;
   border: 2px solid transparent;
   border-radius: 1.25rem;
@@ -149,34 +192,113 @@ const { t } = useI18n();
 }
 
 .future-feature-icon {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-  border-radius: 1rem;
-  margin-bottom: 1.25rem;
+  border-radius: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.future-feature-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
 .future-feature-title {
-  font-size: 1.125rem;
+  font-size: 1.0625rem;
   font-weight: 700;
   color: #111827;
-  margin: 0 0 0.875rem 0;
+  margin: 0 0 0.75rem 0;
   line-height: 1.3;
 }
 
 .future-feature-description {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   color: #6b7280;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 }
 
-@media (max-width: 1200px) {
+.request-feature-section {
+  margin-top: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.request-feature-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+}
+
+.request-feature-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.35);
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+}
+
+.request-feature-btn:active {
+  transform: translateY(0);
+}
+
+.request-feature-btn svg {
+  flex-shrink: 0;
+}
+
+.email-copied-message {
+  color: #059669;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background: #d1fae5;
+  border-radius: 0.375rem;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 1400px) {
+  .future-features-container {
+    max-width: 1200px;
+  }
+
+  .future-features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
   .future-features-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
@@ -191,6 +313,22 @@ const { t } = useI18n();
 
   .future-feature-card {
     padding: 2rem;
+  }
+
+  .request-feature-section {
+    margin-top: 3rem;
+  }
+
+  .request-feature-btn {
+    font-size: 0.9375rem;
+    padding: 0.875rem 1.5rem;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .email-copied-message {
+    font-size: 0.8125rem;
+    padding: 0.5rem 0.875rem;
   }
 }
 </style>

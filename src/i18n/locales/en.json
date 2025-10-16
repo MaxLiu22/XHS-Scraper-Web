@@ -31,6 +31,8 @@
     "badge": "Future Features",
     "title": "What's Next: Intelligence Built In",
     "subtitle": "Transform from data extraction to strategic insights with future features designed for professionals",
+    "requestFeatureBtn": "Missing a feature you need? Email me directly!",
+    "emailCopiedMsg": "Email copied!",
     "aiInsights": {
       "title": "Instant Keyword Cloud & Trend Analysis",
       "description": "Visualize trending tags, hot topics, and keyword frequency the moment you scrape—no exports needed. Spot opportunities instantly with AI-powered visual analytics."
@@ -46,6 +48,10 @@
     "automatedMonitoring": {
       "title": "Automated Scheduled Scraping & Alerts",
       "description": "Never miss a competitor move or trending moment. Schedule weekly scrapes on profiles or keywords, and receive alerts when new viral content drops. Turn your tool into a 24/7 intelligence platform."
+    },
+    "multiPlatformExport": {
+      "title": "Multi-Platform Export Integration",
+      "description": "One-click sync to Google Sheets, Notion, Feishu, and other collaboration platforms. No more manual copy-paste—send your data straight to your workflow for seamless team collaboration."
     }
   },
   "download": {
