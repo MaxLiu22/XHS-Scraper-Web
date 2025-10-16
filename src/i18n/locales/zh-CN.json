@@ -9,7 +9,7 @@
     "tagline": "轻松提取公开帖子数据",
     "downloadBtn": "立即下载",
     "viewDemoBtn": "查看演示",
-    "languageNotice": "🌏 中文版本已完成，英文版和韩文版即将推出！"
+    "languageNotice": "🌏 现已支持中文、英文和韩文版本！"
   },
   "features": {
     "title": "核心功能",
@@ -63,7 +63,7 @@
       "demo": "演示",
       "contact": "联系"
     },
-    "languageNotice": "提供中文版本，英文版和韩文版即将推出",
+    "languageNotice": "现已支持中文、英文和韩文版本",
     "copyright": "© 2025 小红书帖子采集器。保留所有权利。"
   }
 }

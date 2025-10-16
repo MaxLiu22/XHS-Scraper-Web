@@ -9,7 +9,7 @@
     "tagline": "Extract Public Post Data with Ease",
     "downloadBtn": "Download Now",
     "viewDemoBtn": "View Demo",
-    "languageNotice": "🌏 Chinese version is ready, English and Korean versions coming soon!"
+    "languageNotice": "🌏 Now available in Chinese, English, and Korean!"
   },
   "features": {
     "title": "Key Features",
@@ -63,7 +63,7 @@
       "demo": "Demo",
       "contact": "Contact"
     },
-    "languageNotice": "Available in Chinese, with English and Korean versions coming soon",
+    "languageNotice": "Now available in Chinese, English, and Korean",
     "copyright": "© 2025 Xiaohongshu Post Scraper. All rights reserved."
   }
 }

@@ -9,7 +9,7 @@
     "tagline": "공개 게시물 데이터를 쉽게 추출",
     "downloadBtn": "지금 다운로드",
     "viewDemoBtn": "데모 보기",
-    "languageNotice": "🌏 중국어 버전 완료, 영어 및 한국어 버전 곧 출시!"
+    "languageNotice": "🌏 이제 중국어, 영어, 한국어로 이용 가능!"
   },
   "features": {
     "title": "주요 기능",
@@ -63,7 +63,7 @@
       "demo": "데모",
       "contact": "연락처"
     },
-    "languageNotice": "중국어로 제공되며, 영어 및 한국어 버전이 곧 출시됩니다",
+    "languageNotice": "이제 중국어, 영어, 한국어로 이용 가능",
     "copyright": "© 2025 샤오홍슈 게시물 스크래퍼. 모든 권리 보유."
   }
 }
