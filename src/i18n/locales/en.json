@@ -27,6 +27,27 @@
       "description": "Export up to 30 posts from any account"
     }
   },
+  "futureFeatures": {
+    "badge": "Future Features",
+    "title": "What's Next: Intelligence Built In",
+    "subtitle": "Transform from data extraction to strategic insights with future features designed for professionals",
+    "aiInsights": {
+      "title": "Instant Keyword Cloud & Trend Analysis",
+      "description": "Visualize trending tags, hot topics, and keyword frequency the moment you scrape—no exports needed. Spot opportunities instantly with AI-powered visual analytics."
+    },
+    "explosiveFilter": {
+      "title": "\"Explosive Post\" Smart Filter",
+      "description": "Only extract what matters. Set custom engagement thresholds (>1,000 Likes, >500 Comments) to automatically capture viral, high-performing content and eliminate noise before you export."
+    },
+    "customExport": {
+      "title": "Custom Field Export Builder",
+      "description": "Your data, your way. Select only the exact fields you need—no bloated files, no unnecessary columns. Export lean, clean datasets ready for immediate analysis and action."
+    },
+    "automatedMonitoring": {
+      "title": "Automated Scheduled Scraping & Alerts",
+      "description": "Never miss a competitor move or trending moment. Schedule weekly scrapes on profiles or keywords, and receive alerts when new viral content drops. Turn your tool into a 24/7 intelligence platform."
+    }
+  },
   "download": {
     "title": "Installation & Usage",
     "subtitle": "Get started in minutes",
@@ -60,6 +81,7 @@
     "disclaimer": "This tool is for educational and research purposes only. Always respect platform terms of service and data privacy regulations.",
     "navigation": {
       "features": "Features",
+      "futureFeatures": "Future Work",
       "download": "Download",
       "demo": "Demo",
       "contact": "Contact"

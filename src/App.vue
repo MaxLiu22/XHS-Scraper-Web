@@ -5,6 +5,7 @@ import { useHead } from '@vueuse/head';
 import LanguageSwitcher from './components/LanguageSwitcher.vue';
 import HeroSection from './components/HeroSection.vue';
 import FeaturesSection from './components/FeaturesSection.vue';
+import FutureFeaturesSection from './components/FutureFeaturesSection.vue';
 import DownloadSection from './components/DownloadSection.vue';
 import DemoSection from './components/DemoSection.vue';
 import ContactSection from './components/ContactSection.vue';
@@ -62,6 +63,7 @@ watch(locale, () => {
         </div>
         <nav class="header-nav">
           <a href="#features">{{ t('footer.navigation.features') }}</a>
+          <a href="#future-features">{{ t('footer.navigation.futureFeatures') }}</a>
           <a href="#download">{{ t('footer.navigation.download') }}</a>
           <a href="#demo">{{ t('footer.navigation.demo') }}</a>
           <a href="#contact">{{ t('footer.navigation.contact') }}</a>
@@ -73,6 +75,7 @@ watch(locale, () => {
     <main>
       <HeroSection />
       <FeaturesSection />
+      <FutureFeaturesSection />
       <DownloadSection />
       <DemoSection />
       <ContactSection />
