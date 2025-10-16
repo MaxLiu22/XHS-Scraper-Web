@@ -23,8 +23,8 @@
       "description": "目前仅支持一键导出为 Excel（.xlsx）格式"
     },
     "filtering": {
-      "title": "完全免费使用",
-      "description": "无需订阅，核心功能全部免费"
+      "title": "完全免费",
+      "description": "支持导出账号帖子，最多 30 个"
     }
   },
   "download": {
