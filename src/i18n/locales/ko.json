@@ -52,6 +52,7 @@
   "contact": {
     "title": "지원 및 연락처",
     "email": "이메일",
+    "emailCopied": "이메일 복사됨, 언제든지 연락주세요!",
     "github": "GitHub 저장소",
     "faq": "자주 묻는 질문"
   },

@@ -52,6 +52,7 @@
   "contact": {
     "title": "支持与联系",
     "email": "电子邮件",
+    "emailCopied": "邮箱号已复制，请随时与我联系！",
     "github": "GitHub 仓库",
     "faq": "常见问题"
   },

@@ -52,6 +52,7 @@
   "contact": {
     "title": "Support & Contact",
     "email": "Email",
+    "emailCopied": "Email copied, feel free to contact me!",
     "github": "GitHub Repository",
     "faq": "Frequently Asked Questions"
   },
