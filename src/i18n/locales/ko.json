@@ -57,6 +57,7 @@
   "download": {
     "title": "설치 및 사용",
     "subtitle": "몇 분 안에 시작하세요",
+    "tutorialTitle": "샤오홍슈 도구 설치 튜토리얼",
     "step1": {
       "title": "확장 프로그램 다운로드",
       "description": "공식 웹사이트에서 브라우저 확장 프로그램 다운로드"

@@ -25,12 +25,20 @@
         </div>
       </div>
       
+      <!-- Video Tutorial Section -->
+      <div class="video-section">
+        <h3 class="video-section-title">{{ t('download.tutorialTitle') }}</h3>
+        <div class="video-container">
+          <video :src="tutorialVideo" controls class="tutorial-video"></video>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n';
+import tutorialVideo from '../assets/demo_video/xhs_tool_install_tutorial_Vh_01.mp4';
 
 const { t } = useI18n();
 </script>
@@ -135,6 +143,30 @@ const { t } = useI18n();
   color: #991b1b;
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+.video-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.video-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 2rem 0;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tutorial-video {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 @media (max-width: 968px) {
