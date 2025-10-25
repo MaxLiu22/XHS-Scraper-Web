@@ -23,7 +23,7 @@
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
 import logoUrl from '@assets/logo.svg';
-import zipUrl from '../assets/ext-pkg/xhs-all-in-one.zip';
+import zipUrl from '../assets/ext-pkg/xhs-post-tool.zip';
 import posterCN from '../assets/poster/CN.png';
 import posterEN from '../assets/poster/EN.png';
 import posterKR from '../assets/poster/KR.png';
@@ -46,7 +46,7 @@ const currentPoster = computed(() => {
 function downloadZip() {
   const link = document.createElement('a');
   link.href = zipUrl;
-  link.download = 'xhs-all-in-one.zip';
+  link.download = 'xhs-post-tool.zip';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
